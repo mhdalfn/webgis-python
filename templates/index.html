@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Desa Polowijen</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Website Desa Polowijen, Malang</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Selamat Datang di Desa Polowijen</h2>
+            <p>Website ini menyediakan informasi tentang Desa Polowijen dan peta interaktif wilayah desa.</p>
+        </div>
+        <div class="iframe-container">
+            <iframe src="{{ url_for('static', filename='map.html') }}" width="75%" height="300px"></iframe>
+        </div>
+    </div>
+</body>
+</html>
